@@ -1995,7 +1995,9 @@ input, textarea, select {
     padding: 0 var(--space-3);
     height: 56px;
   }
-  --header-height: 56px;
+  :root {
+    --header-height: 56px;
+  }
 
   .header-title {
     font-size: var(--text-sm);

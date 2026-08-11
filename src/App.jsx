@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
+import { HashRouter, Routes, Route, Navigate } from 'react-router-dom';
 import { LanguageProvider } from './context/LanguageContext';
 import { AuthProvider, useAuth } from './context/AuthContext';
 import { ComplaintProvider } from './context/ComplaintContext';
@@ -60,7 +60,7 @@ function RoleRedirect() {
 
 export default function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <LanguageProvider>
         <ThemeProvider>
           <AuthProvider>
@@ -72,6 +72,6 @@ export default function App() {
           </AuthProvider>
         </ThemeProvider>
       </LanguageProvider>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
